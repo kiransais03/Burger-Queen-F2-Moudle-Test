@@ -77,10 +77,11 @@ async function takeOrder(result) {
         rightcart.append(additems);
 
        resolve();
-       console.log("Take Order");
-       console.log(orderpromise);
-       return orderpromise;
     }
+    await orderpromise;
+    console.log("Take Order");
+    console.log(orderpromise);
+    return orderpromise;
 }
 catch(error) {
     console.log(error);
@@ -99,6 +100,7 @@ async function orderPrep() {
     let object = {order_status:true,paid:false};
     resolve(object);
 }
+await prepareprom;
 console.log("Order Prep");
 console.log(prepareprom);
 return prepareprom;
@@ -119,6 +121,7 @@ try {
         object={order_status:true,paid:true};
         resolve(object);
     }
+    await paymentprom;
     console.log("Pay Order");
     console.log(paymentprom);
     return paymentprom;
@@ -135,7 +138,6 @@ async function thankyouFnc(payment) {
     try{
     if(payment) {
         alert("Thankyou for eating with us today!");
-        console.log("Success");
     }
 }
 catch(error) {
@@ -159,6 +161,7 @@ async function pageload() {
     // console.log(payment);
 
     let thanks = await thankyouFnc(payment);
+    console.log("Success Food Order Completed");
 }
 
 pageload();
