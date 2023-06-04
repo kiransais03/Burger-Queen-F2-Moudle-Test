@@ -27,6 +27,7 @@ async function getMenu(){
      
      itemslistdiv.append(division); 
     }
+    console.log("JSON Data");
     console.log(result);
     return result;
  }
