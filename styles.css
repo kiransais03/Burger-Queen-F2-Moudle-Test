@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+}
+
+
+/* Navigation Bar */
+
+.nav-bar-container,.left-nav,.right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 10px;;
+}
+
+.right-nav {
+    column-gap: 20px;
+}
+
+.left-nav {
+    cursor: pointer;
+    color: yellow;
+}
+
+.right-nav div {
+    cursor: pointer;
+}
+
+.nav-bar-container {
+    background-color: goldenrod
+}
+
+main {
+    background-color: rgb(246,230,217);
+}
+
+/* Main Content */
+
+/* Items List */
+
+.header {
+    display: grid;
+   grid-template-columns: 15% 60% 25%;
+   margin-bottom: 10px;
+   justify-content: space-around;
+   color:crimson;
+   font-weight: bolder;
+   font-size: 24px;
+    
+}
+
+.item-image {
+    width: 120px;
+    height: 60px;
+}
+
+.item-div {
+   
+    display: grid;
+   grid-template-columns:15% 60% 25%;
+   justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+    font-size: 22px
+}
+
+.img-name {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.num,.s-no {
+    padding-left: 5px;
+}
+
+#header-name {
+    padding-left: 80px;
+}
+
+.idno {
+    padding-left:15px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+
+/* Order Cart */
+
+.card-item {
+    display: grid;
+    grid-template-columns:15% 15% 55% 15%;
+    justify-content: space-around;
+     align-items: center;
+     padding-bottom: 15px;
+     font-size: 22px
+}
+
+.card-item .img-name {
+    display: flex;
+
+}
+
+.cart-headings {
+    display: grid;
+    grid-template-columns:15% 15% 55% 15%;
+    justify-content: space-around;
+     align-items: center;
+     padding-bottom: 15px;
+     font-size: 26px;
+     color: royalblue;
+     border-top: 10px solid indianred;
+}
+
+.right-cart {
+    border: 10px solid crimson;
+    height: fit-content;
+}
