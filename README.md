@@ -1,5 +1,8 @@
 # Burger-Queen-F2-Moudle-Test
 
+
+
+Deployed Link : https://kiransais03.github.io/Burger-Queen-F2-Moudle-Test/
 Project Overview
 Task
 The goal is to make a real life website for a restaurant and you have to write the script for it.
